@@ -4,14 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Touch Me</title>
+    <title>Basic javascript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <button>Touch Me!</button>
-    
-
+    <div class="header-main">
+        <div class="header container">
+                <button class="bg-change">Mode</button>
+            <div class="user">
+                <a href="https://github.com/Bardan2" target="_blank"><img src="/images/auther.png" alt="">Auther</a>
+                <a href="https://github.com/SarkarTmz" target="_blank"><img src="/images/a.png" alt="">Contributer A</a>
+            </div>
+        </div>
+    </div>
+    <div class="container section" >       
+        <h3 class="mb">Tooltip</h3>
+        <div class="main">
+            <div id="Tooltip-1" class="card">Hover me</div>
+            <div id="Tooltip-2" class="card">Hover me</div>
+            <div id="Tooltip-3" class="card">Hover me</div>
+            <div id="Tooltip-4" class="card">Hover me</div>
+            <div id="Tooltip-5" class="card">Hover me</div>
+            <div id="Tooltip-6" class="card">Hover me</div>
+            <div id="Tooltip-7" class="card btn">Click me</div>
+            <div id="Tooltip-8" class="card btn">Click me</div>
+        </div>
+        <h3 class="section mb">Modal</h3>
+        <div class="main">
+          <div id="Modal-1" class="card btn">Click me</div>
+          <div id="Modal-2" class="card btn">Click me</div>
+          <div id="Modal-3" class="card btn">Click me</div>
+          <div class="card btn" data-confirm onclick="new jBox('Notice', {content: 'Yay! You clicked the confirm button', color: 'green', attributes: {y: 'bottom'}})">Click me</div>
+        </div>
+        <h3 class="section mb">Notice</h3>
+        <div class="main">
+          <div id="Notice-1" class="target-notice card btn">Click me</div>
+          <div id="Notice-2" class="target-notice card btn">Click me</div>
+          <div id="Notice-3" class="target-notice card btn">Click me</div>
+          <div id="Notice-4" class="target-notice card btn">Click me</div>
+        </div>
+        <h3 class="section mb">Images</h3>
+        <div class="img">
+            <a href="/images/1.jpg" title="My title 1" data-jbox-image="gallery1"><img src="/images/1.jpg" alt=""></a>
+            <a href="/images/2.jpg" title="My title 2" data-jbox-image="gallery1"><img src="/images/2.jpg" alt=""></a>
+            <a href="/images/3.jpg" title="My title 3" data-jbox-image="gallery1"><img src="/images/3.jpg" alt=""></a>
+            <a href="/images/4.jpg" title="My title 4" data-jbox-image="gallery1"><img src="/images/4.jpg" alt=""></a>
+            <a href="/images/5.jpg" title="My title 5" data-jbox-image="gallery1"><img src="/images/5.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="footer-main section">
+        <div class="footer container">
+             <p>jBox is a jQuery plugin that makes it easy to create
+                customizable tooltips, modal windows, image galleries and more.</p>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
     <script src="app.js"></script>
 </body>
 </html>
