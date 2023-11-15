@@ -1,10 +1,141 @@
-
-    button {
-    background-color: #555555;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 45vh 94vh;
-    border-radius: 5px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.bg-change{
+    background-color: #ffffff;
+    border: transparent;
+    color: #000000;
+    padding: 0px 20px;
+    font-weight: 700;
+    /* font-size: 16px; */
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header-main{
+    background-color: #555555;
+    padding: 10px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2rem; */
+}
+.header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.user{
+    display: flex;
+    gap: 1rem;
+}
+.user a{
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    flex-direction: column;
+    text-decoration: none;
+}
+.main{
+  display: grid;
+  gap: 1rem;
+}
+
+.card{
+    background-color: rgb(234, 234, 234);
+    padding: 0.7rem 2rem;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+.btn{
+    cursor: pointer;
+}
+
+.img{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+.img img{
+    width: 100%;
+}
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section{
+    margin-top: 5rem;
+}
+.mb{
+    margin-bottom: 1rem;
+}
+.footer-main{
+    background-color: #555555;
+}
+.footer{
+    padding: 2rem 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+@media (min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+}
+
+@media (min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+    .main{
+        grid-template-columns: auto auto;
+    }
+    .img{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+    .main{
+        grid-template-columns: auto auto auto;
+    } 
+    .img{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+    .main{
+        grid-template-columns: auto auto auto auto;
+    }
+    .img{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+/* 
+@media (min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+} */
+
+/* @media (min-width: 1536px){
+    .container{
+        max-width: 1536px;
+    }
+} */
